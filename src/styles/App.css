@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#cart_table {
+  border-collapse: collapse;
+}
+
+#cart_table td, #cart_table th {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+.add_cart {
+  border: 2px solid #8e8e8e;
+  border-radius: 10px;
+  background: #dedede;
+}
+
+.App {
+  margin: 5px;
+}
+.cart {
+  min-height: 300px;
+  border: 1px solid #ccc;
+}
+
+.products, .cart{
+  display: flex;
+}
+
+button{
+  border:none;
+  background: none;
+  outline: none;
+}
