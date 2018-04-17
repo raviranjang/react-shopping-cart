@@ -3,6 +3,14 @@ import initialState from './initialState';
 export default function cart(state = initialState.cart, action) {
     switch (action.type) {
         case 'ADD':
+            var add = true
+            state.filter(function (i) {
+                if (i.id == action.item.id) {
+                    i.quantity = i.quantity + 1;
+                    add = false
+                }
+            })
+            if (!add) return [...state]
             return [...state, action.item];
         case 'REMOVE':
             return state.filter( i => i.id !== action.item.id);
